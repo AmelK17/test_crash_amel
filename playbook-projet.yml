@@ -9,12 +9,10 @@
     shell: |
       curl -fsSL https://get.docker.com -o get-docker.sh
       sudo sh get-docker.sh
-  - name: Install Git
-    shell: apt install git
   - name: Get the git file from GitHub
     git:
-      repo: https://github.com/rtappa/repo_crash.git
-      dest: /home/vagrant/projet/
+      repo: https://github.com/AmelK17/test_crash_amel.git
+      dest: /home/admin/projet/
   - name: run docker compose
     shell: 
       cmd: docker compose up --build -d --scale app=3
