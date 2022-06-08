@@ -1,6 +1,6 @@
 ---
 - name: Projet Load balancer
-  hosts: vpc-robin
+  hosts: vpc-amel
   become: true
   tasks:
   - name: Check connexion
